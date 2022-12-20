@@ -5,6 +5,10 @@ const MovieCard = ({ movie, type }) => {
   return (
     <div className="movie-card">
       <div className="overlay"></div>
+      <p style={{ textAlign: "center", margin: "0", fontSize: "medium" }}>
+        {movie.title}
+      </p>
+
       {movie.poster_path ? (
         <img
           src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
@@ -13,7 +17,6 @@ const MovieCard = ({ movie, type }) => {
       ) : (
         <div className="filler-poster" />
       )}
-
       <MovieControls movie={movie} type={type} />
     </div>
   );

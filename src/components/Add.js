@@ -36,7 +36,7 @@ const Add = () => {
               type="text"
               value={query}
               onChange={changeHandler}
-              placeholder="Search For Movie.."
+              placeholder="Search (VPN required in Iran)"
             />
           </div>
 
